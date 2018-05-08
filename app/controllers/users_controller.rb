@@ -17,16 +17,25 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-  # GET /users/admin
-  def admin
-    
+  # GET /admin/:id
+  def admin_home
+        @user = User.new
   end
 
-  # GET /users/regular
-  def regular
-        
+  # GET /admin/:id/users
+  def admin_users
+            @user = User.new
   end
 
+  # GET /admin/:id/products
+  def admin_products
+            @user = User.new
+  end
+
+  # GET /admin/:id/users/:id/products
+  def admin_user_product
+            @user = User.new
+  end
 
   # GET /users/1/edit
   def edit
